@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3091A871E80EBBC00C87418 /* BalloonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3091A861E80EBBC00C87418 /* BalloonImage.swift */; };
+		E35A386E1E89D11900CF659E /* HighScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35A386D1E89D11900CF659E /* HighScores.swift */; };
+		E35A38701E89D1FC00CF659E /* HighScoreKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35A386F1E89D1FC00CF659E /* HighScoreKeeper.swift */; };
+		E35A38721E89D5B500CF659E /* HighScoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35A38711E89D5B500CF659E /* HighScoresController.swift */; };
+		E35A38741E89DA6A00CF659E /* BalloonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35A38731E89DA6A00CF659E /* BalloonController.swift */; };
+		E3781E5A1E820A970011DF08 /* balloons in Resources */ = {isa = PBXBuildFile; fileRef = E3781E571E820A970011DF08 /* balloons */; };
+		E3781E5B1E820A970011DF08 /* memory in Resources */ = {isa = PBXBuildFile; fileRef = E3781E581E820A970011DF08 /* memory */; };
+		E3781E5C1E820A970011DF08 /* sorting in Resources */ = {isa = PBXBuildFile; fileRef = E3781E591E820A970011DF08 /* sorting */; };
+		E3781E5E1E820F0A0011DF08 /* MemoryGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3781E5D1E820F0A0011DF08 /* MemoryGameController.swift */; };
+		E3781E601E82197E0011DF08 /* MemoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3781E5F1E82197E0011DF08 /* MemoryCell.swift */; };
+		E386CFF91E86333E000F0DFB /* sortingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CFF81E86333E000F0DFB /* sortingVC.swift */; };
+		E386CFFB1E870BD4000F0DFB /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CFFA1E870BD4000F0DFB /* VehicleType.swift */; };
+		E386CFFD1E870C92000F0DFB /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E386CFFC1E870C92000F0DFB /* Vehicle.swift */; };
+		E386D0011E8859EE000F0DFB /* Basketball Buzzer-SoundBible.com-1863250611.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E386CFFE1E8859EE000F0DFB /* Basketball Buzzer-SoundBible.com-1863250611.mp3 */; };
+		E386D0021E8859EE000F0DFB /* Bomb_Exploding-Sound_Explorer-68256487.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E386CFFF1E8859EE000F0DFB /* Bomb_Exploding-Sound_Explorer-68256487.mp3 */; };
+		E386D0031E8859EE000F0DFB /* booing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E386D0001E8859EE000F0DFB /* booing.mp3 */; };
+		E386D0051E8859F9000F0DFB /* cheering.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E386D0041E8859F9000F0DFB /* cheering.mp3 */; };
+		E39532BF1E7B5E8300EDFDB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39532BE1E7B5E8300EDFDB4 /* AppDelegate.swift */; };
+		E39532C11E7B5E8300EDFDB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39532C01E7B5E8300EDFDB4 /* ViewController.swift */; };
+		E39532C41E7B5E8300EDFDB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39532C21E7B5E8300EDFDB4 /* Main.storyboard */; };
+		E39532C61E7B5E8300EDFDB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39532C51E7B5E8300EDFDB4 /* Assets.xcassets */; };
+		E39532C91E7B5E8300EDFDB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39532C71E7B5E8300EDFDB4 /* LaunchScreen.storyboard */; };
+		E39532D41E7B5E8300EDFDB4 /* Kids_Joy_CenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39532D31E7B5E8300EDFDB4 /* Kids_Joy_CenterTests.swift */; };
+		E39532DF1E7B5E8300EDFDB4 /* Kids_Joy_CenterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39532DE1E7B5E8300EDFDB4 /* Kids_Joy_CenterUITests.swift */; };
+		E39532F71E7B63C700EDFDB4 /* back-main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39532EC1E7B63C700EDFDB4 /* back-main.jpg */; };
+		E39532F81E7B63C700EDFDB4 /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532ED1E7B63C700EDFDB4 /* PlayButton.png */; };
+		E39532F91E7B63C700EDFDB4 /* hard.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532EE1E7B63C700EDFDB4 /* hard.png */; };
+		E39532FA1E7B63C700EDFDB4 /* easy.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532EF1E7B63C700EDFDB4 /* easy.png */; };
+		E39532FB1E7B63C700EDFDB4 /* medium.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532F01E7B63C700EDFDB4 /* medium.png */; };
+		E39532FC1E7B63C700EDFDB4 /* balloon-game-logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532F11E7B63C700EDFDB4 /* balloon-game-logo1.png */; };
+		E39532FD1E7B63C700EDFDB4 /* balloon-game-logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532F21E7B63C700EDFDB4 /* balloon-game-logo2.png */; };
+		E39532FE1E7B63C700EDFDB4 /* balloon-game-logo3.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532F31E7B63C700EDFDB4 /* balloon-game-logo3.png */; };
+		E39532FF1E7B63C700EDFDB4 /* sorting-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532F41E7B63C700EDFDB4 /* sorting-icon.png */; };
+		E39533001E7B63C700EDFDB4 /* score.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532F51E7B63C700EDFDB4 /* score.png */; };
+		E39533011E7B63C700EDFDB4 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = E39532F61E7B63C700EDFDB4 /* time.png */; };
+		E39533031E7B63D800EDFDB4 /* memory.png in Resources */ = {isa = PBXBuildFile; fileRef = E39533021E7B63D800EDFDB4 /* memory.png */; };
+		E39533051E7B7F3400EDFDB4 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E39533041E7B7F3400EDFDB4 /* iTunesArtwork@1x.png */; };
+		E39533091E7B7F9D00EDFDB4 /* Icon-App-20x20@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E39533061E7B7F9D00EDFDB4 /* Icon-App-20x20@1x.png */; };
+		E395330A1E7B7F9D00EDFDB4 /* Icon-App-20x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E39533071E7B7F9D00EDFDB4 /* Icon-App-20x20@2x.png */; };
+		E395330B1E7B7F9D00EDFDB4 /* Icon-App-20x20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E39533081E7B7F9D00EDFDB4 /* Icon-App-20x20@3x.png */; };
+		E395330D1E7B8FFE00EDFDB4 /* childrens-kids-background-26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E395330C1E7B8FFE00EDFDB4 /* childrens-kids-background-26.jpg */; };
+		E3C15BD71E84B99C00D3A04A /* Sorry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E3C15BD61E84B99C00D3A04A /* Sorry.mp3 */; };
+		E3C15BD91E84E8C300D3A04A /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C15BD81E84E8C300D3A04A /* Mode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E39532D01E7B5E8300EDFDB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E39532B31E7B5E8300EDFDB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E39532BA1E7B5E8300EDFDB4;
+			remoteInfo = "Kids Joy Center";
+		};
+		E39532DB1E7B5E8300EDFDB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E39532B31E7B5E8300EDFDB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E39532BA1E7B5E8300EDFDB4;
+			remoteInfo = "Kids Joy Center";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E3091A861E80EBBC00C87418 /* BalloonImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonImage.swift; sourceTree = "<group>"; };
+		E35A386D1E89D11900CF659E /* HighScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HighScores.swift; path = ../HighScores.swift; sourceTree = "<group>"; };
+		E35A386F1E89D1FC00CF659E /* HighScoreKeeper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HighScoreKeeper.swift; path = ../HighScoreKeeper.swift; sourceTree = "<group>"; };
+		E35A38711E89D5B500CF659E /* HighScoresController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresController.swift; sourceTree = "<group>"; };
+		E35A38731E89DA6A00CF659E /* BalloonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonController.swift; sourceTree = "<group>"; };
+		E3781E571E820A970011DF08 /* balloons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = balloons; sourceTree = "<group>"; };
+		E3781E581E820A970011DF08 /* memory */ = {isa = PBXFileReference; lastKnownFileType = folder; path = memory; sourceTree = "<group>"; };
+		E3781E591E820A970011DF08 /* sorting */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sorting; sourceTree = "<group>"; };
+		E3781E5D1E820F0A0011DF08 /* MemoryGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGameController.swift; sourceTree = "<group>"; };
+		E3781E5F1E82197E0011DF08 /* MemoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryCell.swift; sourceTree = "<group>"; };
+		E386CFF81E86333E000F0DFB /* sortingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sortingVC.swift; path = ../sortingVC.swift; sourceTree = "<group>"; };
+		E386CFFA1E870BD4000F0DFB /* VehicleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
+		E386CFFC1E870C92000F0DFB /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E386CFFE1E8859EE000F0DFB /* Basketball Buzzer-SoundBible.com-1863250611.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Basketball Buzzer-SoundBible.com-1863250611.mp3"; sourceTree = "<group>"; };
+		E386CFFF1E8859EE000F0DFB /* Bomb_Exploding-Sound_Explorer-68256487.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bomb_Exploding-Sound_Explorer-68256487.mp3"; sourceTree = "<group>"; };
+		E386D0001E8859EE000F0DFB /* booing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = booing.mp3; sourceTree = "<group>"; };
+		E386D0041E8859F9000F0DFB /* cheering.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cheering.mp3; sourceTree = "<group>"; };
+		E39532BB1E7B5E8300EDFDB4 /* Kids Joy Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kids Joy Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39532BE1E7B5E8300EDFDB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E39532C01E7B5E8300EDFDB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E39532C31E7B5E8300EDFDB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E39532C51E7B5E8300EDFDB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E39532C81E7B5E8300EDFDB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E39532CA1E7B5E8300EDFDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39532CF1E7B5E8300EDFDB4 /* Kids Joy CenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids Joy CenterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39532D31E7B5E8300EDFDB4 /* Kids_Joy_CenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_Joy_CenterTests.swift; sourceTree = "<group>"; };
+		E39532D51E7B5E8300EDFDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39532DA1E7B5E8300EDFDB4 /* Kids Joy CenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kids Joy CenterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39532DE1E7B5E8300EDFDB4 /* Kids_Joy_CenterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kids_Joy_CenterUITests.swift; sourceTree = "<group>"; };
+		E39532E01E7B5E8300EDFDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39532EC1E7B63C700EDFDB4 /* back-main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "back-main.jpg"; sourceTree = "<group>"; };
+		E39532ED1E7B63C700EDFDB4 /* PlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButton.png; sourceTree = "<group>"; };
+		E39532EE1E7B63C700EDFDB4 /* hard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hard.png; sourceTree = "<group>"; };
+		E39532EF1E7B63C700EDFDB4 /* easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easy.png; sourceTree = "<group>"; };
+		E39532F01E7B63C700EDFDB4 /* medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium.png; sourceTree = "<group>"; };
+		E39532F11E7B63C700EDFDB4 /* balloon-game-logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-game-logo1.png"; sourceTree = "<group>"; };
+		E39532F21E7B63C700EDFDB4 /* balloon-game-logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-game-logo2.png"; sourceTree = "<group>"; };
+		E39532F31E7B63C700EDFDB4 /* balloon-game-logo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-game-logo3.png"; sourceTree = "<group>"; };
+		E39532F41E7B63C700EDFDB4 /* sorting-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sorting-icon.png"; sourceTree = "<group>"; };
+		E39532F51E7B63C700EDFDB4 /* score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score.png; sourceTree = "<group>"; };
+		E39532F61E7B63C700EDFDB4 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
+		E39533021E7B63D800EDFDB4 /* memory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory.png; sourceTree = "<group>"; };
+		E39533041E7B7F3400EDFDB4 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		E39533061E7B7F9D00EDFDB4 /* Icon-App-20x20@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@1x.png"; sourceTree = "<group>"; };
+		E39533071E7B7F9D00EDFDB4 /* Icon-App-20x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@2x.png"; sourceTree = "<group>"; };
+		E39533081E7B7F9D00EDFDB4 /* Icon-App-20x20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-20x20@3x.png"; sourceTree = "<group>"; };
+		E395330C1E7B8FFE00EDFDB4 /* childrens-kids-background-26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "childrens-kids-background-26.jpg"; sourceTree = "<group>"; };
+		E3C15BD61E84B99C00D3A04A /* Sorry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Sorry.mp3; path = ../Sorry.mp3; sourceTree = "<group>"; };
+		E3C15BD81E84E8C300D3A04A /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E39532B81E7B5E8300EDFDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39532CC1E7B5E8300EDFDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39532D71E7B5E8300EDFDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E39532B21E7B5E8300EDFDB4 = {
+			isa = PBXGroup;
+			children = (
+				E39532BD1E7B5E8300EDFDB4 /* Kids Joy Center */,
+				E39532D21E7B5E8300EDFDB4 /* Kids Joy CenterTests */,
+				E39532DD1E7B5E8300EDFDB4 /* Kids Joy CenterUITests */,
+				E39532BC1E7B5E8300EDFDB4 /* Products */,
+				E39533041E7B7F3400EDFDB4 /* iTunesArtwork@1x.png */,
+			);
+			sourceTree = "<group>";
+		};
+		E39532BC1E7B5E8300EDFDB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E39532BB1E7B5E8300EDFDB4 /* Kids Joy Center.app */,
+				E39532CF1E7B5E8300EDFDB4 /* Kids Joy CenterTests.xctest */,
+				E39532DA1E7B5E8300EDFDB4 /* Kids Joy CenterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E39532BD1E7B5E8300EDFDB4 /* Kids Joy Center */ = {
+			isa = PBXGroup;
+			children = (
+				E35A386D1E89D11900CF659E /* HighScores.swift */,
+				E35A386F1E89D1FC00CF659E /* HighScoreKeeper.swift */,
+				E386D0041E8859F9000F0DFB /* cheering.mp3 */,
+				E386CFFE1E8859EE000F0DFB /* Basketball Buzzer-SoundBible.com-1863250611.mp3 */,
+				E386CFFF1E8859EE000F0DFB /* Bomb_Exploding-Sound_Explorer-68256487.mp3 */,
+				E386D0001E8859EE000F0DFB /* booing.mp3 */,
+				E386CFF81E86333E000F0DFB /* sortingVC.swift */,
+				E395330C1E7B8FFE00EDFDB4 /* childrens-kids-background-26.jpg */,
+				E39533061E7B7F9D00EDFDB4 /* Icon-App-20x20@1x.png */,
+				E3C15BD61E84B99C00D3A04A /* Sorry.mp3 */,
+				E39533071E7B7F9D00EDFDB4 /* Icon-App-20x20@2x.png */,
+				E39533081E7B7F9D00EDFDB4 /* Icon-App-20x20@3x.png */,
+				E39532BE1E7B5E8300EDFDB4 /* AppDelegate.swift */,
+				E39532C01E7B5E8300EDFDB4 /* ViewController.swift */,
+				E3781E5D1E820F0A0011DF08 /* MemoryGameController.swift */,
+				E3781E5F1E82197E0011DF08 /* MemoryCell.swift */,
+				E39532C21E7B5E8300EDFDB4 /* Main.storyboard */,
+				E39532C51E7B5E8300EDFDB4 /* Assets.xcassets */,
+				E39533021E7B63D800EDFDB4 /* memory.png */,
+				E39532EC1E7B63C700EDFDB4 /* back-main.jpg */,
+				E39532ED1E7B63C700EDFDB4 /* PlayButton.png */,
+				E39532EE1E7B63C700EDFDB4 /* hard.png */,
+				E39532EF1E7B63C700EDFDB4 /* easy.png */,
+				E39532F01E7B63C700EDFDB4 /* medium.png */,
+				E39532F11E7B63C700EDFDB4 /* balloon-game-logo1.png */,
+				E39532F21E7B63C700EDFDB4 /* balloon-game-logo2.png */,
+				E39532F31E7B63C700EDFDB4 /* balloon-game-logo3.png */,
+				E39532F41E7B63C700EDFDB4 /* sorting-icon.png */,
+				E39532F51E7B63C700EDFDB4 /* score.png */,
+				E39532F61E7B63C700EDFDB4 /* time.png */,
+				E39532C71E7B5E8300EDFDB4 /* LaunchScreen.storyboard */,
+				E39532CA1E7B5E8300EDFDB4 /* Info.plist */,
+				E3091A861E80EBBC00C87418 /* BalloonImage.swift */,
+				E3781E571E820A970011DF08 /* balloons */,
+				E3781E581E820A970011DF08 /* memory */,
+				E3781E591E820A970011DF08 /* sorting */,
+				E3C15BD81E84E8C300D3A04A /* Mode.swift */,
+				E386CFFA1E870BD4000F0DFB /* VehicleType.swift */,
+				E386CFFC1E870C92000F0DFB /* Vehicle.swift */,
+				E35A38711E89D5B500CF659E /* HighScoresController.swift */,
+				E35A38731E89DA6A00CF659E /* BalloonController.swift */,
+			);
+			path = "Kids Joy Center";
+			sourceTree = "<group>";
+		};
+		E39532D21E7B5E8300EDFDB4 /* Kids Joy CenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E39532D31E7B5E8300EDFDB4 /* Kids_Joy_CenterTests.swift */,
+				E39532D51E7B5E8300EDFDB4 /* Info.plist */,
+			);
+			path = "Kids Joy CenterTests";
+			sourceTree = "<group>";
+		};
+		E39532DD1E7B5E8300EDFDB4 /* Kids Joy CenterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E39532DE1E7B5E8300EDFDB4 /* Kids_Joy_CenterUITests.swift */,
+				E39532E01E7B5E8300EDFDB4 /* Info.plist */,
+			);
+			path = "Kids Joy CenterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E39532BA1E7B5E8300EDFDB4 /* Kids Joy Center */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39532E31E7B5E8300EDFDB4 /* Build configuration list for PBXNativeTarget "Kids Joy Center" */;
+			buildPhases = (
+				E39532B71E7B5E8300EDFDB4 /* Sources */,
+				E39532B81E7B5E8300EDFDB4 /* Frameworks */,
+				E39532B91E7B5E8300EDFDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kids Joy Center";
+			productName = "Kids Joy Center";
+			productReference = E39532BB1E7B5E8300EDFDB4 /* Kids Joy Center.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E39532CE1E7B5E8300EDFDB4 /* Kids Joy CenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39532E61E7B5E8300EDFDB4 /* Build configuration list for PBXNativeTarget "Kids Joy CenterTests" */;
+			buildPhases = (
+				E39532CB1E7B5E8300EDFDB4 /* Sources */,
+				E39532CC1E7B5E8300EDFDB4 /* Frameworks */,
+				E39532CD1E7B5E8300EDFDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E39532D11E7B5E8300EDFDB4 /* PBXTargetDependency */,
+			);
+			name = "Kids Joy CenterTests";
+			productName = "Kids Joy CenterTests";
+			productReference = E39532CF1E7B5E8300EDFDB4 /* Kids Joy CenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E39532D91E7B5E8300EDFDB4 /* Kids Joy CenterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39532E91E7B5E8300EDFDB4 /* Build configuration list for PBXNativeTarget "Kids Joy CenterUITests" */;
+			buildPhases = (
+				E39532D61E7B5E8300EDFDB4 /* Sources */,
+				E39532D71E7B5E8300EDFDB4 /* Frameworks */,
+				E39532D81E7B5E8300EDFDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E39532DC1E7B5E8300EDFDB4 /* PBXTargetDependency */,
+			);
+			name = "Kids Joy CenterUITests";
+			productName = "Kids Joy CenterUITests";
+			productReference = E39532DA1E7B5E8300EDFDB4 /* Kids Joy CenterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E39532B31E7B5E8300EDFDB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Artis, Justin (CONT)";
+				TargetAttributes = {
+					E39532BA1E7B5E8300EDFDB4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FNHB4V8WJS;
+						ProvisioningStyle = Automatic;
+					};
+					E39532CE1E7B5E8300EDFDB4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FNHB4V8WJS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E39532BA1E7B5E8300EDFDB4;
+					};
+					E39532D91E7B5E8300EDFDB4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FNHB4V8WJS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E39532BA1E7B5E8300EDFDB4;
+					};
+				};
+			};
+			buildConfigurationList = E39532B61E7B5E8300EDFDB4 /* Build configuration list for PBXProject "Kids Joy Center" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E39532B21E7B5E8300EDFDB4;
+			productRefGroup = E39532BC1E7B5E8300EDFDB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E39532BA1E7B5E8300EDFDB4 /* Kids Joy Center */,
+				E39532CE1E7B5E8300EDFDB4 /* Kids Joy CenterTests */,
+				E39532D91E7B5E8300EDFDB4 /* Kids Joy CenterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E39532B91E7B5E8300EDFDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39532FC1E7B63C700EDFDB4 /* balloon-game-logo1.png in Resources */,
+				E386D0031E8859EE000F0DFB /* booing.mp3 in Resources */,
+				E39532C91E7B5E8300EDFDB4 /* LaunchScreen.storyboard in Resources */,
+				E39533051E7B7F3400EDFDB4 /* iTunesArtwork@1x.png in Resources */,
+				E39533001E7B63C700EDFDB4 /* score.png in Resources */,
+				E39532C61E7B5E8300EDFDB4 /* Assets.xcassets in Resources */,
+				E395330B1E7B7F9D00EDFDB4 /* Icon-App-20x20@3x.png in Resources */,
+				E386D0021E8859EE000F0DFB /* Bomb_Exploding-Sound_Explorer-68256487.mp3 in Resources */,
+				E39532FE1E7B63C700EDFDB4 /* balloon-game-logo3.png in Resources */,
+				E39533031E7B63D800EDFDB4 /* memory.png in Resources */,
+				E3781E5A1E820A970011DF08 /* balloons in Resources */,
+				E39532F91E7B63C700EDFDB4 /* hard.png in Resources */,
+				E39533091E7B7F9D00EDFDB4 /* Icon-App-20x20@1x.png in Resources */,
+				E39532C41E7B5E8300EDFDB4 /* Main.storyboard in Resources */,
+				E39532FA1E7B63C700EDFDB4 /* easy.png in Resources */,
+				E3781E5B1E820A970011DF08 /* memory in Resources */,
+				E39532FF1E7B63C700EDFDB4 /* sorting-icon.png in Resources */,
+				E386D0011E8859EE000F0DFB /* Basketball Buzzer-SoundBible.com-1863250611.mp3 in Resources */,
+				E386D0051E8859F9000F0DFB /* cheering.mp3 in Resources */,
+				E39532F71E7B63C700EDFDB4 /* back-main.jpg in Resources */,
+				E395330D1E7B8FFE00EDFDB4 /* childrens-kids-background-26.jpg in Resources */,
+				E39532FB1E7B63C700EDFDB4 /* medium.png in Resources */,
+				E3781E5C1E820A970011DF08 /* sorting in Resources */,
+				E395330A1E7B7F9D00EDFDB4 /* Icon-App-20x20@2x.png in Resources */,
+				E39532F81E7B63C700EDFDB4 /* PlayButton.png in Resources */,
+				E39533011E7B63C700EDFDB4 /* time.png in Resources */,
+				E39532FD1E7B63C700EDFDB4 /* balloon-game-logo2.png in Resources */,
+				E3C15BD71E84B99C00D3A04A /* Sorry.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39532CD1E7B5E8300EDFDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39532D81E7B5E8300EDFDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E39532B71E7B5E8300EDFDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39532C11E7B5E8300EDFDB4 /* ViewController.swift in Sources */,
+				E386CFF91E86333E000F0DFB /* sortingVC.swift in Sources */,
+				E386CFFB1E870BD4000F0DFB /* VehicleType.swift in Sources */,
+				E35A38721E89D5B500CF659E /* HighScoresController.swift in Sources */,
+				E35A38741E89DA6A00CF659E /* BalloonController.swift in Sources */,
+				E35A38701E89D1FC00CF659E /* HighScoreKeeper.swift in Sources */,
+				E3781E5E1E820F0A0011DF08 /* MemoryGameController.swift in Sources */,
+				E39532BF1E7B5E8300EDFDB4 /* AppDelegate.swift in Sources */,
+				E3781E601E82197E0011DF08 /* MemoryCell.swift in Sources */,
+				E3091A871E80EBBC00C87418 /* BalloonImage.swift in Sources */,
+				E386CFFD1E870C92000F0DFB /* Vehicle.swift in Sources */,
+				E35A386E1E89D11900CF659E /* HighScores.swift in Sources */,
+				E3C15BD91E84E8C300D3A04A /* Mode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39532CB1E7B5E8300EDFDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39532D41E7B5E8300EDFDB4 /* Kids_Joy_CenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E39532D61E7B5E8300EDFDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39532DF1E7B5E8300EDFDB4 /* Kids_Joy_CenterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E39532D11E7B5E8300EDFDB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E39532BA1E7B5E8300EDFDB4 /* Kids Joy Center */;
+			targetProxy = E39532D01E7B5E8300EDFDB4 /* PBXContainerItemProxy */;
+		};
+		E39532DC1E7B5E8300EDFDB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E39532BA1E7B5E8300EDFDB4 /* Kids Joy Center */;
+			targetProxy = E39532DB1E7B5E8300EDFDB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E39532C21E7B5E8300EDFDB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E39532C31E7B5E8300EDFDB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E39532C71E7B5E8300EDFDB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E39532C81E7B5E8300EDFDB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E39532E11E7B5E8300EDFDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E39532E21E7B5E8300EDFDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E39532E41E7B5E8300EDFDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FNHB4V8WJS;
+				INFOPLIST_FILE = "Kids Joy Center/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "VCU.Kids-Joy-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E39532E51E7B5E8300EDFDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FNHB4V8WJS;
+				INFOPLIST_FILE = "Kids Joy Center/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "VCU.Kids-Joy-Center";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E39532E71E7B5E8300EDFDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FNHB4V8WJS;
+				INFOPLIST_FILE = "Kids Joy CenterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "VCU.Kids-Joy-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids Joy Center.app/Kids Joy Center";
+			};
+			name = Debug;
+		};
+		E39532E81E7B5E8300EDFDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FNHB4V8WJS;
+				INFOPLIST_FILE = "Kids Joy CenterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "VCU.Kids-Joy-CenterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kids Joy Center.app/Kids Joy Center";
+			};
+			name = Release;
+		};
+		E39532EA1E7B5E8300EDFDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FNHB4V8WJS;
+				INFOPLIST_FILE = "Kids Joy CenterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "VCU.Kids-Joy-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kids Joy Center";
+			};
+			name = Debug;
+		};
+		E39532EB1E7B5E8300EDFDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FNHB4V8WJS;
+				INFOPLIST_FILE = "Kids Joy CenterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "VCU.Kids-Joy-CenterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kids Joy Center";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E39532B61E7B5E8300EDFDB4 /* Build configuration list for PBXProject "Kids Joy Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39532E11E7B5E8300EDFDB4 /* Debug */,
+				E39532E21E7B5E8300EDFDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39532E31E7B5E8300EDFDB4 /* Build configuration list for PBXNativeTarget "Kids Joy Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39532E41E7B5E8300EDFDB4 /* Debug */,
+				E39532E51E7B5E8300EDFDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39532E61E7B5E8300EDFDB4 /* Build configuration list for PBXNativeTarget "Kids Joy CenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39532E71E7B5E8300EDFDB4 /* Debug */,
+				E39532E81E7B5E8300EDFDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39532E91E7B5E8300EDFDB4 /* Build configuration list for PBXNativeTarget "Kids Joy CenterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E39532EA1E7B5E8300EDFDB4 /* Debug */,
+				E39532EB1E7B5E8300EDFDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E39532B31E7B5E8300EDFDB4 /* Project object */;
+}
